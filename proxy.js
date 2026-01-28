@@ -20,7 +20,7 @@ app.use((req, res, next) => {
   next();
 });
 
-app.all('/api/proxy', async (req, res) => {
+app.all('/proxy', async (req, res) => {
   try {
     const targetUrl = req.query.url;
 
@@ -112,7 +112,7 @@ app.all('/api/proxy', async (req, res) => {
 });
 
 // Root endpoint untuk info
-app.get('/api', (req, res) => {
+app.get('/', (req, res) => {
   res.json({
     message: 'Proxy API Server',
     usage: '/api/proxy?url=https://example.com',
