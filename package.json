@@ -2,10 +2,10 @@
   "name": "vercel-proxy",
   "version": "1.0.0",
   "description": "Universal proxy server untuk forward request ke URL manapun",
-  "main": "api/proxy.js",
+  "main": "proxy.js",
   "scripts": {
-    "dev": "node api/proxy.js",
-    "start": "node api/proxy.js"
+    "dev": "node proxy.js",
+    "start": "node proxy.js"
   },
   "dependencies": {
     "express": "^4.18.2",
